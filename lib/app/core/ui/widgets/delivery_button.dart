@@ -1,9 +1,7 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 
 class DeliveryButton extends StatelessWidget {
-  final VoidCallback? onpressed;
+  final VoidCallback? onPressed;
   final String label;
   final double? width;
   final double? heigth;
@@ -11,7 +9,7 @@ class DeliveryButton extends StatelessWidget {
   const DeliveryButton({
     super.key,
     required this.label,
-    required this.onpressed,
+    required this.onPressed,
     this.width,
     this.heigth,
   });
@@ -22,7 +20,7 @@ class DeliveryButton extends StatelessWidget {
       width: width,
       height: heigth,
       child: ElevatedButton(
-        onPressed: onpressed,
+        onPressed: onPressed,
         child: Text(label),
       ),
     );
