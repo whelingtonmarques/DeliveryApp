@@ -12,7 +12,7 @@ class HomeState extends Equatable {
   final HomeStateStatus status;
   final List<ProductModel> products;
 
-  HomeState({
+  const HomeState({
     required this.status,
     required this.products,
   });
